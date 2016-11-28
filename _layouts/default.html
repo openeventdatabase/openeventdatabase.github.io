@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html class="no-js" lang="fr">
+	{% include head.html %}
+
+	<body>
+		<header>
+			<nav class="ui secondary menu">
+				<div class="left menu">
+					{% if page.url != "/" %}
+						<a class="item" id="logo" href="/">OEDB</a>
+					{% endif %}
+				</div>
+			</nav>
+		</header>
+
+		<main>
+			{{ content }}
+		</main>
+
+		<footer>
+		</footer>
+
+		{% for file in page.additional_js %}
+			<script type="text/javascript" src="{% if file contains '://' %}{{ file }}{% else %}/js/{{ file }}.js{% endif %}"></script>
+		{% endfor %}
+	</body>
+</html>

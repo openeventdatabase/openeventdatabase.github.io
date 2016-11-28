@@ -1,0 +1,18 @@
+# This file is *NOT* reloaded automatically when you use 'jekyll serve'.
+# If you change this file, please restart the server process.
+
+# see https://jekyllrb.com/docs/continuous-integration/
+exclude: [vendor, app.json]
+
+# Site settings
+title: OpenEventDatabase
+email: contact@openeventdatabase.org
+description: Où, Quoi et Qand ?
+url: https://www.openeventdatabase.org
+
+defaults:
+  -
+    scope:
+      path: ""  # means "all files"
+    values:
+      layout: default
