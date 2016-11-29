@@ -1,4 +1,64 @@
 ---
 title: Accueil
 ---
-Content here
+
+<div class="ui large top menu transition">
+  <div class="ui container">
+    <a href="/" class="item">Accueil</a>
+    <a href="#demos" class="item">Démos</a>
+    <a href="#asso" class="item">Association</a>
+    <div class="right menu">
+      <div class="item">
+        <a class="ui primary button" href="https://github.com/openeventdatabase/">Contribuer</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="ui container grid">
+  <div class="row"><h1>OpenEventDatabase.org</h1></div>
+  <div class="row">
+    <div class="ui left rail"><img src="img/oedb.svg"/></div>
+    <div class="twelve wide column ui text container">
+    <p>Quelques exemples pour comprendre le concept...
+    <ul>
+    <li>Un calcul d'itinéraire peut avoir besoin de données en temps réel pour s'ajuster: bouchons, ralentissements, travaux, conditions météo. Cela permet de passer d'une appli passive à une appli temp-réel.</li>
+    <li>Que faire ce week-end ? Pour trouver facilement un loisir, une activité proche de chez soi... les spectacles, activités, horaires de ciné.</li>
+    <li>Conserver des évènements historiques, ou l'historique de géométries changeantes: anciens tracés de routes, champs de bataille, découpages administratifs, frontières... et les évènements passés plus ponctuels.</li>
+    </ul>
+    </p>
+    </div>
+  </div>
+  <div class="row ui text container">
+    <p>Dans tous ces exemples, trois informations sont nécessaires:</p>
+    <div class="ui text container">
+    <img src="img/what.svg" class="ui tiny left floated image"><p>Quoi: la description sémantique d'un événement. On peut identifier des événements par type; planifié (horaires de spectacle, travaux), prévu (par un modèle météo par exemple), imprévu accident, bouchon, retard de train); par famille (culture, sports, transport, environnement...); par importance, etc. </p>
+    </div>
+    <div class="ui text container">
+    <img src="img/where.svg" class="ui tiny left floated image"><p> Où: la composante géographique de l'événement, spécifiée sous la forme d'une paire latitude/longitude, d'une géométrie GeoJSON, ou d'un lien vers un référentiel géographique tel qu'OSM.
+    </p>
+    </div>
+    <div class="ui text container">
+    <img src="img/when.svg" class="ui tiny left floated image"><p> Quand: une temporalité, basée sur le format ISO 8601, apte à représenter des dates ou heures ponctuelles, des intervalles, des récurrences périodiques...</p>
+    </div>
+    <p>Aucun projet à l'heure actuelle ne propose de mettre en commun ce type de données. OpenStreetMap répond à quoi et où, mais pas à quand et n'a pas vocation à collecter des données historiques.</p>
+    <p>Le projet openeventdatabase tente de combler ce manque en proposant une base de données spatio-temporelles pour échanger des informations de type "quoi / où / quand" de tout type.</p>
+  </div>
+
+</div>
+
+<div class="ui grid">
+  <div class="two wide column">&nbsp;</div>
+  <div class="five wide column ui card">
+      <a name="demos"/><h3>Essayez OEDB</h3>
+      <p><a href="http://live.openeventdatabase.org">Le live</a></p>
+      <p><a href="http://api.openeventdatabase.org/event">L'API JSON</a></p>
+      <p><a href="http://petstore.swagger.io/?url=https://raw.githubusercontent.com/openeventdatabase/backend/master/swagger.json">Documentation de l'API</a></p>
+  </div>
+  <div class="two wide column">&nbsp;</div>
+  <div class="five wide column ui card">
+    <a name="asso"/><h3>L'association</h3>
+    <p>En date du 13/11/2016, l'association OpenEventDatabase a été constituée pour pérenniser le projet.</p>
+  </div>
+  <div class="two wide column">&nbsp;</div>
+</div>
