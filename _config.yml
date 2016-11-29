@@ -7,7 +7,7 @@ exclude: [vendor, app.json]
 # Site settings
 title: OpenEventDatabase
 email: contact@openeventdatabase.org
-description: Où, Quoi et Qand ?
+description: Où, Quoi et Quand ?
 url: https://www.openeventdatabase.org
 
 defaults:
